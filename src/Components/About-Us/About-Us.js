@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './../Header/Header';
 import Card from './../Card/Card';
-import GroupImage from './../../Assets/Images/group.png';
 import { Navigate } from 'react-router-dom';
 
 export const AboutUs = () => {
