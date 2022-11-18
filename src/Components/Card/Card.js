@@ -3,9 +3,11 @@ import React from 'react';
 
 const Content = (props) =>{
     var contentStyle = {
-        display: "flex",
-        height: "80%",
+        display: "grid",
+        gridTemplateColumns: "1fr auto",
         alignItems: "center",
+        justifyItems: "center",
+        alignContent: "center",
         justifyContent: "center",
         backgroundColor: props.backgroundColor,
         textAlign: "center",
@@ -19,7 +21,7 @@ const Content = (props) =>{
 
     return(
         <div style={contentStyle}>
-            <p>{props.content}</p>
+            {props.content}
         </div>
     );
 }
@@ -27,7 +29,7 @@ const Content = (props) =>{
 const Heading = (props) =>{
     var headingStyle = {
         width: 100+"%",
-        height: "20%",
+        // height: "20%",
         backgroundColor: "white",
         padding: 0.2+"rem",
         textAlign: "center",
@@ -46,7 +48,7 @@ const Card = (props) => {
 
     const cardStyle = {
         width: props.width,
-        height: props.height,
+        // height: props.height,
         margin: "1rem auto",
         border: "0.1rem solid black",
         borderRadius: 1+"rem",
@@ -58,7 +60,7 @@ const Card = (props) => {
             <Heading text={props.heading}/>
             <Content 
                 backgroundColor={props.backgroundColor} 
-                content={props.content}
+                content={props.children}
             />
         </div>
     );

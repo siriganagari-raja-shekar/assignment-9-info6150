@@ -25,11 +25,11 @@ export const Jobs = () => {
                   return(
                     <Card 
                       width={"20em"}
-                      height={"20rem"}
                       backgroundColor={"#232946"}
-                      heading={role}
-                      content={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto architecto necessitatibus minima velit nobis!"}                                     
-                    />
+                      heading={role}                                     
+                    >
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto architecto necessitatibus minima velit nobis!</p>
+                    </Card>
                   )
               })
             }
